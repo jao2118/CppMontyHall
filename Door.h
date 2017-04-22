@@ -4,11 +4,12 @@
 class Door
 {
 private:
-	bool isOpen;
+	bool open;
 public:
 	Door();
 	void Open();
 	void Close();
+	bool IsOpen() const;
 };
 
 #endif
