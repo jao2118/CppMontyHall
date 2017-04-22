@@ -32,7 +32,7 @@ void Game::Play()
 		while (!(cin >> userChoice))
 		{
 			cin.clear();
-			cin.ignore();
+			cin.ignore(10000, '\n');
 			cout << "Invalid. Please try again: ";
 		}
 		isChoiceValid = (1 <= userChoice && userChoice <= NUM_DOORS);
