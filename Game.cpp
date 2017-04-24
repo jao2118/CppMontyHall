@@ -13,8 +13,7 @@ static int ChooseWinningDoor(int numDoors)
 
 Game::Game()
 {
-	int winnerIndex = ChooseWinningDoor(NUM_DOORS);
-	winner = &doors[winnerIndex];
+	winnerIndex = ChooseWinningDoor(NUM_DOORS);
 #ifdef _DEBUG
 	std::cout << "winner = " << winnerIndex << std::endl;
 #endif
@@ -44,4 +43,9 @@ void Game::Play()
 #ifdef _DEBUG
 	cout << "DEBUG: User choice = " << userChoice << endl;
 #endif
+
+	for (int i = 0; i < NUM_DOORS; i++)
+	{
+
+	}
 }
