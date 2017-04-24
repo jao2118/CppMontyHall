@@ -11,7 +11,7 @@ private:
 	int winnerIndex;
 public:
 	Game();
-	void Play();
+	bool Play();
 };
 
 #endif
